@@ -36,21 +36,21 @@
 
         colemak_default {
             bindings = <
-&kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &to 4                                                  &mo 2      &kp N6  &kp N7  &kp N8     &kp N9    &kp N0         &kp MINUS
-&kp TAB    &kp Q      &kp W     &kp F     &kp P      &kp G   &none                                                  &none      &kp J   &kp L   &kp U      &kp Y     &kp SEMICOLON  &kp BSLH
-&kp ESC    &kp A      &kp R     &kp S     &kp T      &kp D   &none  &kp LCTRL  &kp LALT      &kp DELETE  &kp RCTRL  &none      &kp H   &kp N   &kp E      &kp I     &kp O          &kp SQT
-&kp LSHFT  &kp Z      &kp X     &kp C     &kp V      &kp B                     &kp HOME      &kp PG_UP                         &kp K   &kp M   &kp COMMA  &kp DOT   &kp FSLH       &kp RSHFT
-&mo 1      &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &mo 1  &kp LMETA  &kp END       &kp PG_DN   &kp ENTER  &kp SPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT       &mo 1
+&kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &tog 4                                                          &mo 2          &kp N6  &kp N7  &kp N8     &kp N9    &kp N0         &kp MINUS
+&kp TAB    &kp Q      &kp W     &kp F     &kp P      &kp G   &kp HOME                                                        &kp PAGE_UP    &kp J   &kp L   &kp U      &kp Y     &kp SEMICOLON  &kp BSLH
+&kp ESC    &kp A      &kp R     &kp S     &kp T      &kp D   &kp END        &kp LCTRL  &kp LALT       &kp DELETE  &kp RCTRL  &kp PAGE_DOWN  &kp H   &kp N   &kp E      &kp I     &kp O          &kp SQT
+&kp LSHFT  &kp Z      &kp X     &kp C     &kp V      &kp B                             &none          &none                                 &kp K   &kp M   &kp COMMA  &kp DOT   &kp FSLH       &kp RSHFT
+&mo 1      &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &kp BACKSPACE  &mo 1      &kp LMETA      &kp RMETA   &kp ENTER  &kp SPACE              &kp UP  &kp DOWN   &kp LBKT  &kp RBKT       &mo 1
             >;
         };
 
         caps-extend {
             bindings = <
-&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &tog 4                                      &mo 2   &kp F7    &kp F8    &kp F9        &kp F10    &kp F11   &kp F12
-&trans  &trans  &trans  &trans  &trans  &trans  &none                                       &none   &trans    &trans    &trans        &trans     &kp BSPC  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &none   &trans  &trans      &trans  &trans  &none   &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans    &trans    &trans        &trans     &trans    &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans            &trans    &trans        &trans     &trans    &trans
+&kp F1  &kp F2           &kp F3       &kp F4          &kp F5      &kp F6       &tog 4                                      &mo 2   &kp F7     &kp F8        &kp F9                &kp F10                &kp F11   &kp F12
+&none   &kp EXCLAMATION  &kp AT_SIGN  &kp HASH        &kp DOLLAR  &kp PERCENT  &none                                       &none   &kp CARET  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BSPC  &none
+&none   &kp LEFT_ALT     &none        &kp LEFT_SHIFT  &kp LCTRL   &none        &none   &trans  &trans      &trans  &trans  &none   &kp LEFT   &kp DOWN      &kp UP_ARROW          &kp RIGHT              &none     &none
+&none   &none            &none        &none           &none       &none                        &trans      &trans                  &none      &none         &none                 &none                  &none     &none
+&none   &none            &none        &none           &none                    &trans  &trans  &trans      &trans  &trans  &trans             &none         &none                 &none                  &none     &none
             >;
         };
 
