@@ -85,6 +85,13 @@
             hold-trigger-key-positions = <52 34>;
             tapping-term-ms = <200>;
         };
+
+        bw: backspace-word {
+            compatible = "zmk,behavior-tap-dance";
+            label = "backspace-word";
+            #binding-cells = <0>;
+            bindings = <&kp BACKSPACE>, <&kp LC(BACKSPACE)>;
+        };
     };
 
     combos {
@@ -102,11 +109,11 @@
 
         colemak_default {
             bindings = <
-&kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &none                                                                   &mo 5      &kp N6  &kp N7  &kp N8     &kp N9    &kp N0         &kp MINUS
-&kp TAB    &kp Q      &kp W     &kp F     &kp P      &kp G   &none                                                                   &none      &kp J   &kp L   &kp U      &kp Y     &kp SEMICOLON  &kp BSLH
-&kp ESC    &kp A      &kp R     &kp S     &kp T      &kp D   &mo_tog 4 4    &kp LCTRL     &kp LALT         &kp RIGHT_ALT  &kp RCTRL  &none      &kp H   &kp N   &kp E      &kp I     &kp O          &kp SQT
-&kp LSHFT  &kp Z      &kp X     &kp C     &kp V      &kp B                                &mo_tog 2 2      &kp DELETE                           &kp K   &kp M   &kp COMMA  &kp DOT   &kp FSLH       &kp RSHFT
-&none      &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &kp BACKSPACE  &sh 3 LSHIFT  &kp LMETA        &kp RETURN     &kp ENTER  &kp SPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT       &none
+&kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &none                                                               &mo 5      &kp N6  &kp N7  &kp N8     &kp N9    &kp N0         &kp MINUS
+&kp TAB    &kp Q      &kp W     &kp F     &kp P      &kp G   &none                                                               &none      &kp J   &kp L   &kp U      &kp Y     &kp SEMICOLON  &kp BSLH
+&kp ESC    &kp A      &kp R     &kp S     &kp T      &kp D   &mo_tog 4 4  &kp LCTRL  &kp LALT         &kp RIGHT_ALT  &kp RCTRL   &none      &kp H   &kp N   &kp E      &kp I     &kp O          &kp SQT
+&kp LSHFT  &kp Z      &kp X     &kp C     &kp V      &kp B                           &mo_tog 2 2      &kp DELETE                            &kp K   &kp M   &kp COMMA  &kp DOT   &kp FSLH       &kp RSHFT
+&none      &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &bw          &mo 3      &kp LMETA        &kp RETURN     &kp RSHIFT  &kp SPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT       &none
             >;
         };
 
