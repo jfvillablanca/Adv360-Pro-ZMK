@@ -39,6 +39,42 @@
             tapping-term-ms = <100>;
             hold-trigger-key-positions = <66 69 65 70>;
         };
+
+        dt_home: DT_HOME {
+            compatible = "zmk,behavior-tap-dance";
+            label = "Double Tap Home";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT>, <&kp HOME>;
+
+            tapping-term-ms = <200>;
+        };
+
+        dt_pg_dn: DT_PG_DN {
+            compatible = "zmk,behavior-tap-dance";
+            label = "Double Tap Page Down";
+            #binding-cells = <0>;
+            bindings = <&kp DOWN>, <&kp PAGE_DOWN>;
+
+            tapping-term-ms = <200>;
+        };
+
+        dt_pg_up: DT_PG_UP {
+            compatible = "zmk,behavior-tap-dance";
+            label = "Double Tap Page Up";
+            #binding-cells = <0>;
+            bindings = <&kp UP_ARROW>, <&kp PAGE_UP>;
+
+            tapping-term-ms = <200>;
+        };
+
+        dt_end: DT_End {
+            compatible = "zmk,behavior-tap-dance";
+            label = "Double Tap End";
+            #binding-cells = <0>;
+            bindings = <&kp RIGHT>, <&kp END>;
+
+            tapping-term-ms = <200>;
+        };
     };
 
     combos {
@@ -86,11 +122,11 @@
 
         caps-extend {
             bindings = <
-&kp F1  &kp F2     &kp F3        &kp F4          &kp F5     &kp F6     &none                                       &mo 5   &kp F7    &kp F8    &kp F9        &kp F10    &kp F11  &kp F12
-&none   &none      &none         &none           &none      &none      &none                                       &none   &none     &none     &none         &none      &none    &none
-&none   &kp LGUI   &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LCTRL  &none      &none   &trans  &trans      &trans  &trans  &none   &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &none    &none
-&none   &kp LC(Z)  &kp LC(X)     &kp LC(C)       &kp LC(V)  &kp LC(A)                  &trans      &trans                  &none     &none     &none         &none      &none    &none
-&none   &none      &none         &none           &none                 &trans  &trans  &trans      &trans  &none   &trans            &none     &none         &none      &none    &none
+&kp F1  &kp F2     &kp F3        &kp F4          &kp F5     &kp F6     &none                                       &mo 5   &kp F7    &kp F8     &kp F9     &kp F10  &kp F11  &kp F12
+&none   &none      &none         &none           &none      &none      &none                                       &none   &none     &none      &none      &none    &none    &none
+&none   &kp LGUI   &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LCTRL  &none      &none   &trans  &trans      &trans  &trans  &none   &dt_home  &dt_pg_dn  &dt_pg_up  &dt_end  &none    &none
+&none   &kp LC(Z)  &kp LC(X)     &kp LC(C)       &kp LC(V)  &kp LC(A)                  &trans      &trans                  &none     &none      &none      &none    &none    &none
+&none   &none      &none         &none           &none                 &trans  &trans  &trans      &trans  &none   &trans            &none      &none      &none    &none    &none
             >;
         };
 
