@@ -37,7 +37,7 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
-            hold-trigger-key-positions = <66 69 65 70>;
+            hold-trigger-key-positions = <66 69 65 70 52>;
         };
 
         dt_home: DT_HOME {
@@ -75,6 +75,16 @@
 
             tapping-term-ms = <200>;
         };
+
+        mo_tog: MO_TOG {
+            compatible = "zmk,behavior-hold-tap";
+            label = "Momentary/Toggle";
+            bindings = <&mo>, <&tog>;
+
+            #binding-cells = <2>;
+            hold-trigger-key-positions = <52>;
+            tapping-term-ms = <200>;
+        };
     };
 
     combos {
@@ -92,11 +102,11 @@
 
         colemak_default {
             bindings = <
-&kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &tog 5                                                                &mo 5          &kp N6  &kp N7  &kp N8     &kp N9    &kp N0         &kp MINUS
-&kp TAB    &kp Q      &kp W     &kp F     &kp P      &kp G   &kp HOME                                                              &kp PAGE_UP    &kp J   &kp L   &kp U      &kp Y     &kp SEMICOLON  &kp BSLH
-&kp ESC    &kp A      &kp R     &kp S     &kp T      &kp D   &kp END        &kp LCTRL     &kp LALT       &kp RIGHT_ALT  &kp RCTRL  &kp PAGE_DOWN  &kp H   &kp N   &kp E      &kp I     &kp O          &kp SQT
-&kp LSHFT  &kp Z      &kp X     &kp C     &kp V      &kp B                                &none          &kp DELETE                               &kp K   &kp M   &kp COMMA  &kp DOT   &kp FSLH       &kp RSHFT
-&none      &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &kp BACKSPACE  &sh 3 LSHIFT  &kp LMETA      &kp RMETA      &kp ENTER  &kp SPACE              &kp UP  &kp DOWN   &kp LBKT  &kp RBKT       &none
+&kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &tog 5                                                                  &mo 5          &kp N6  &kp N7  &kp N8     &kp N9    &kp N0         &kp MINUS
+&kp TAB    &kp Q      &kp W     &kp F     &kp P      &kp G   &kp HOME                                                                &kp PAGE_UP    &kp J   &kp L   &kp U      &kp Y     &kp SEMICOLON  &kp BSLH
+&kp ESC    &kp A      &kp R     &kp S     &kp T      &kp D   &kp END        &kp LCTRL     &kp LALT         &kp RIGHT_ALT  &kp RCTRL  &kp PAGE_DOWN  &kp H   &kp N   &kp E      &kp I     &kp O          &kp SQT
+&kp LSHFT  &kp Z      &kp X     &kp C     &kp V      &kp B                                &mo_tog 2 2      &kp DELETE                               &kp K   &kp M   &kp COMMA  &kp DOT   &kp FSLH       &kp RSHFT
+&none      &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &kp BACKSPACE  &sh 3 LSHIFT  &kp LMETA        &kp RMETA      &kp ENTER  &kp SPACE              &kp UP  &kp DOWN   &kp LBKT  &kp RBKT       &none
             >;
         };
 
