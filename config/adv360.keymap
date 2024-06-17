@@ -92,6 +92,13 @@
             #binding-cells = <0>;
             bindings = <&kp BACKSPACE>, <&kp LC(BACKSPACE)>;
         };
+
+        numword: numword {
+            compatible = "zmk,behavior-caps-word";
+            label = "NUMWORD";
+            #binding-cells = <0>;
+            continue-list = <NUMBER_1 NUMBER_2 NUMBER_3 NUMBER_4 NUMBER_5 NUMBER_6 NUMBER_7 NUMBER_8 NUMBER_9 NUMBER_0 PLUS MINUS ASTERISK SLASH EQUAL LEFT_PARENTHESIS RIGHT_PARENTHESIS>;
+        };
     };
 
     combos {
@@ -110,7 +117,7 @@
         colemak_default {
             bindings = <
 &kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &none                                                               &mo 5      &kp N6  &kp N7  &kp N8     &kp N9    &kp N0         &kp MINUS
-&kp TAB    &kp Q      &kp W     &kp F     &kp P      &kp G   &none                                                               &none      &kp J   &kp L   &kp U      &kp Y     &kp SEMICOLON  &kp BSLH
+&kp TAB    &kp Q      &kp W     &kp F     &kp P      &kp G   &numword                                                            &none      &kp J   &kp L   &kp U      &kp Y     &kp SEMICOLON  &kp BSLH
 &kp ESC    &kp A      &kp R     &kp S     &kp T      &kp D   &mo_tog 4 4  &kp LCTRL  &kp LALT         &kp RIGHT_ALT  &kp RCTRL   &none      &kp H   &kp N   &kp E      &kp I     &kp O          &kp SQT
 &kp LSHFT  &kp Z      &kp X     &kp C     &kp V      &kp B                           &mo_tog 2 2      &kp DELETE                            &kp K   &kp M   &kp COMMA  &kp DOT   &kp FSLH       &kp RSHFT
 &none      &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &bw          &mo 3      &kp LMETA        &kp RETURN     &kp RSHIFT  &kp SPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT       &none
