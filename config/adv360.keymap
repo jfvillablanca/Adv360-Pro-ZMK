@@ -106,7 +106,7 @@
 &kp TAB    &kp Q      &kp W     &kp F     &kp P      &kp G   &none                                                                   &none      &kp J   &kp L   &kp U      &kp Y     &kp SEMICOLON  &kp BSLH
 &kp ESC    &kp A      &kp R     &kp S     &kp T      &kp D   &mo_tog 4 4    &kp LCTRL     &kp LALT         &kp RIGHT_ALT  &kp RCTRL  &none      &kp H   &kp N   &kp E      &kp I     &kp O          &kp SQT
 &kp LSHFT  &kp Z      &kp X     &kp C     &kp V      &kp B                                &mo_tog 2 2      &kp DELETE                           &kp K   &kp M   &kp COMMA  &kp DOT   &kp FSLH       &kp RSHFT
-&none      &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &kp BACKSPACE  &sh 3 LSHIFT  &kp LMETA        &kp RMETA      &kp ENTER  &kp SPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT       &none
+&none      &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &kp BACKSPACE  &sh 3 LSHIFT  &kp LMETA        &kp RETURN     &kp ENTER  &kp SPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT       &none
             >;
         };
 
@@ -132,11 +132,11 @@
 
         caps-extend {
             bindings = <
-&kp F1  &kp F2     &kp F3        &kp F4          &kp F5     &kp F6     &none                                       &mo 5   &kp F7    &kp F8     &kp F9     &kp F10  &kp F11  &kp F12
-&none   &none      &none         &none           &none      &none      &none                                       &none   &none     &none      &none      &none    &none    &none
-&none   &kp LGUI   &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LCTRL  &none      &trans  &trans  &trans      &trans  &trans  &none   &dt_home  &dt_pg_dn  &dt_pg_up  &dt_end  &none    &none
-&none   &kp LC(Z)  &kp LC(X)     &kp LC(C)       &kp LC(V)  &kp LC(A)                  &trans      &trans                  &none     &none      &none      &none    &none    &none
-&none   &none      &none         &none           &none                 &trans  &trans  &trans      &trans  &none   &trans            &none      &none      &none    &none    &none
+&kp F1  &kp F2     &kp F3        &kp F4          &kp F5     &kp F6     &none                                       &mo 5   &kp F7    &kp F8         &kp F9       &kp F10    &kp F11  &kp F12
+&none   &none      &none         &none           &none      &none      &none                                       &none   &none     &none          &none        &none      &none    &none
+&none   &kp LGUI   &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LCTRL  &none      &trans  &trans  &trans      &trans  &trans  &none   &kp LEFT  &kp DOWN       &kp UP       &kp RIGHT  &none    &none
+&none   &kp LC(Z)  &kp LC(X)     &kp LC(C)       &kp LC(V)  &kp LC(A)                  &trans      &trans                  &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &none    &none
+&none   &none      &none         &none           &none                 &trans  &trans  &trans      &trans  &none   &trans            &none          &none        &none      &none    &none
             >;
         };
 
