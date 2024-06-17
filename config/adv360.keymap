@@ -82,7 +82,7 @@
             bindings = <&mo>, <&tog>;
 
             #binding-cells = <2>;
-            hold-trigger-key-positions = <52>;
+            hold-trigger-key-positions = <52 34>;
             tapping-term-ms = <200>;
         };
     };
@@ -102,11 +102,11 @@
 
         colemak_default {
             bindings = <
-&kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &tog 5                                                                  &mo 5          &kp N6  &kp N7  &kp N8     &kp N9    &kp N0         &kp MINUS
-&kp TAB    &kp Q      &kp W     &kp F     &kp P      &kp G   &kp HOME                                                                &kp PAGE_UP    &kp J   &kp L   &kp U      &kp Y     &kp SEMICOLON  &kp BSLH
-&kp ESC    &kp A      &kp R     &kp S     &kp T      &kp D   &kp END        &kp LCTRL     &kp LALT         &kp RIGHT_ALT  &kp RCTRL  &kp PAGE_DOWN  &kp H   &kp N   &kp E      &kp I     &kp O          &kp SQT
-&kp LSHFT  &kp Z      &kp X     &kp C     &kp V      &kp B                                &mo_tog 2 2      &kp DELETE                               &kp K   &kp M   &kp COMMA  &kp DOT   &kp FSLH       &kp RSHFT
-&none      &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &kp BACKSPACE  &sh 3 LSHIFT  &kp LMETA        &kp RMETA      &kp ENTER  &kp SPACE              &kp UP  &kp DOWN   &kp LBKT  &kp RBKT       &none
+&kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &none                                                                   &mo 5      &kp N6  &kp N7  &kp N8     &kp N9    &kp N0         &kp MINUS
+&kp TAB    &kp Q      &kp W     &kp F     &kp P      &kp G   &none                                                                   &none      &kp J   &kp L   &kp U      &kp Y     &kp SEMICOLON  &kp BSLH
+&kp ESC    &kp A      &kp R     &kp S     &kp T      &kp D   &mo_tog 4 4    &kp LCTRL     &kp LALT         &kp RIGHT_ALT  &kp RCTRL  &none      &kp H   &kp N   &kp E      &kp I     &kp O          &kp SQT
+&kp LSHFT  &kp Z      &kp X     &kp C     &kp V      &kp B                                &mo_tog 2 2      &kp DELETE                           &kp K   &kp M   &kp COMMA  &kp DOT   &kp FSLH       &kp RSHFT
+&none      &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &kp BACKSPACE  &sh 3 LSHIFT  &kp LMETA        &kp RMETA      &kp ENTER  &kp SPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT       &none
             >;
         };
 
@@ -157,6 +157,16 @@
 &none  &to 0         &to 1         &none              &none            &none         &none        &none  &none      &bt BT_CLR  &none       &rgb_ug RGB_MEFS_CMD 5  &none  &none       &none       &none  &none  &none
 &none  &none         &none         &none              &macro_ver       &none                             &none      &none                                           &none  &none       &none       &none  &none  &none
 &none  &none         &none         &none              &none                          &none        &none  &none      &none       &bl BL_TOG  &rgb_ug RGB_TOG                &bl BL_INC  &bl BL_DEC  &none  &none  &none
+            >;
+        };
+
+        layer_6 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
