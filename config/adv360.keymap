@@ -134,7 +134,7 @@
             bindings = <
 &kp F1  &kp F2     &kp F3        &kp F4          &kp F5     &kp F6     &none                                       &mo 5   &kp F7    &kp F8     &kp F9     &kp F10  &kp F11  &kp F12
 &none   &none      &none         &none           &none      &none      &none                                       &none   &none     &none      &none      &none    &none    &none
-&none   &kp LGUI   &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LCTRL  &none      &none   &trans  &trans      &trans  &trans  &none   &dt_home  &dt_pg_dn  &dt_pg_up  &dt_end  &none    &none
+&none   &kp LGUI   &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LCTRL  &none      &trans  &trans  &trans      &trans  &trans  &none   &dt_home  &dt_pg_dn  &dt_pg_up  &dt_end  &none    &none
 &none   &kp LC(Z)  &kp LC(X)     &kp LC(C)       &kp LC(V)  &kp LC(A)                  &trans      &trans                  &none     &none      &none      &none    &none    &none
 &none   &none      &none         &none           &none                 &trans  &trans  &trans      &trans  &none   &trans            &none      &none      &none    &none    &none
             >;
@@ -144,7 +144,7 @@
             bindings = <
 &none  &none                 &none                  &none      &none      &none      &trans                                      &none   &none  &none         &none         &none         &none  &none
 &none  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none      &none      &none      &none                                       &none   &none  &kp N7        &kp N8        &kp N9        &none  &none
-&none  &none                 &none                  &none      &none      &none      &none   &trans  &trans      &trans  &trans  &none   &none  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &none  &none
+&none  &none                 &none                  &none      &none      &none      &trans  &trans  &trans      &trans  &trans  &none   &none  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &none  &none
 &none  &kp PLUS              &kp MINUS              &kp ASTRK  &kp SLASH  &kp EQUAL                  &trans      &trans                  &none  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &none  &none
 &none  &none                 &none                  &none      &none                 &trans  &trans  &trans      &trans  &trans  &kp N0         &none         &none         &kp PERIOD    &none  &none
             >;
@@ -157,16 +157,6 @@
 &none  &to 0         &to 1         &none              &none            &none         &none        &none  &none      &bt BT_CLR  &none       &rgb_ug RGB_MEFS_CMD 5  &none  &none       &none       &none  &none  &none
 &none  &none         &none         &none              &macro_ver       &none                             &none      &none                                           &none  &none       &none       &none  &none  &none
 &none  &none         &none         &none              &none                          &none        &none  &none      &none       &bl BL_TOG  &rgb_ug RGB_TOG                &bl BL_INC  &bl BL_DEC  &none  &none  &none
-            >;
-        };
-
-        layer_6 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
