@@ -63,7 +63,7 @@
         compatible = "zmk,combos";
 
         combo_mo_symbol {
-            bindings = <&mo 4>;
+            bindings = <&mo 2>;
             key-positions = <66 69>;
             layers = <0 1>;
         };
@@ -74,11 +74,11 @@
 
         colemak_default {
             bindings = <
-&kp EQUAL  &kp N1       &kp N2           &kp N3         &kp N4               &kp N5  &none                                                                 &mo 6      &kp N6  &kp N7        &kp N8         &kp N9       &kp N0         &kp MINUS
-&kp TAB    &kp Q        &kp W            &kp F          &kp P                &kp G   &none                                                                 &none      &kp J   &kp L         &kp U          &kp Y        &kp SEMICOLON  &kp BSLH
-&kp ESC    &hml LGUI A  &hml LEFT_ALT R  &hml LSHIFT S  &hml LEFT_CONTROL T  &kp D   &mo_tog 2 2    &kp LCTRL  &kp LALT         &kp RIGHT_ALT  &kp RCTRL   &none      &kp H   &hmr RCTRL N  &hmr RSHIFT E  &hmr RALT I  &hmr RGUI O    &kp SQT
-&kp LSHFT  &kp Z        &kp X            &kp C          &kp V                &kp B                             &mo_tog 4 4      &kp DELETE                            &kp K   &kp M         &kp COMMA      &kp DOT      &kp FSLH       &kp RSHFT
-&kp LALT   &kp GRAVE    &kp CAPS         &kp LEFT       &kp RIGHT                    &kp BACKSPACE  &mo 2      &kp LMETA        &kp RETURN     &kp RSHIFT  &kp SPACE          &kp UP        &kp DOWN       &kp LBKT     &kp RBKT       &kp RIGHT_ALT
+&kp EQUAL  &kp N1       &kp N2           &kp N3         &kp N4               &kp N5  &none                                                            &mo 6      &kp N6  &kp N7        &kp N8         &kp N9       &kp N0         &kp MINUS
+&kp TAB    &kp Q        &kp W            &kp F          &kp P                &kp G   &none                                                            &none      &kp J   &kp L         &kp U          &kp Y        &kp SEMICOLON  &kp BSLH
+&kp ESC    &hml LGUI A  &hml LEFT_ALT R  &hml LSHIFT S  &hml LEFT_CONTROL T  &kp D   &none          &kp LCTRL       &kp DELETE      &none  &kp RCTRL  &none      &kp H   &hmr RCTRL N  &hmr RSHIFT E  &hmr RALT I  &hmr RGUI O    &kp SQT
+&kp LSHFT  &kp Z        &kp X            &kp C          &kp V                &kp B                                  &mo 4           &mo 5                        &kp K   &kp M         &kp COMMA      &kp DOT      &kp FSLH       &kp RSHFT
+&kp LALT   &kp GRAVE    &kp CAPS         &kp LEFT       &kp RIGHT                    &kp BACKSPACE  &kp LEFT_SHIFT  &mo 2           &mo 3  &kp ENTER  &kp SPACE          &kp UP        &kp DOWN       &kp LBKT     &kp RBKT       &kp RIGHT_ALT
             >;
         };
 
@@ -92,13 +92,13 @@
             >;
         };
 
-        number {
+        navigation {
             bindings = <
-&none  &none     &none     &none       &none      &none  &trans                                          &mo 6   &none             &none         &none         &none         &none              &none
-&none  &none     &none     &none       &none      &none  &none                                           &none   &kp LEFT_BRACKET  &kp N7        &kp N8        &kp N9        &kp RIGHT_BRACKET  &none
-&none  &kp LGUI  &kp LALT  &kp LSHIFT  &kp LCTRL  &none  &trans  &trans  &trans      &trans  &kp MINUS   &none   &kp COLON         &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp EQUAL          &none
-&none  &none     &none     &none       &none      &none                  &trans      &trans                      &kp GRAVE         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp BACKSLASH      &none
-&none  &none     &none     &none       &none             &trans  &trans  &trans      &trans  &kp PERIOD  &kp N0                    &none         &none         &kp PERIOD    &none              &none
+&none  &none     &none         &none           &none      &none  &none                                       &none   &none         &none      &none          &none        &none      &none
+&none  &none     &none         &none           &none      &none  &none                                       &none   &kp LC(A)     &kp LC(P)  &kp LC(C)      &kp LC(X)    &kp LC(Z)  &none
+&none  &kp LGUI  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LCTRL  &none  &trans  &trans  &trans      &trans  &trans  &none   &kp LEFT      &kp DOWN   &kp UP         &kp RIGHT    &none      &none
+&none  &none     &none         &none           &none      &none                  &trans      &trans                  &kp CAPSLOCK  &kp HOME   &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &none
+&none  &none     &none         &none           &none             &trans  &none   &trans      &trans  &none   &trans                &none      &none          &none        &none      &none
             >;
         };
 
@@ -112,13 +112,13 @@
             >;
         };
 
-        navigation {
+        number {
             bindings = <
-&none  &none     &none         &none           &none      &none  &none                                       &none   &none         &none      &none          &none        &none      &none
-&none  &none     &none         &none           &none      &none  &none                                       &none   &kp LC(A)     &kp LC(P)  &kp LC(C)      &kp LC(X)    &kp LC(Z)  &none
-&none  &kp LGUI  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LCTRL  &none  &trans  &trans  &trans      &trans  &trans  &none   &kp LEFT      &kp DOWN   &kp UP         &kp RIGHT    &none      &none
-&none  &none     &none         &none           &none      &none                  &trans      &trans                  &kp CAPSLOCK  &kp HOME   &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &none
-&none  &none     &none         &none           &none             &trans  &none   &trans      &trans  &none   &trans                &none      &none          &none        &none      &none
+&none  &none     &none     &none       &none      &none  &trans                                          &mo 6   &none             &none         &none         &none         &none              &none
+&none  &none     &none     &none       &none      &none  &none                                           &none   &kp LEFT_BRACKET  &kp N7        &kp N8        &kp N9        &kp RIGHT_BRACKET  &none
+&none  &kp LGUI  &kp LALT  &kp LSHIFT  &kp LCTRL  &none  &trans  &trans  &trans      &trans  &kp MINUS   &none   &kp COLON         &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp EQUAL          &none
+&none  &none     &none     &none       &none      &none                  &trans      &trans                      &kp GRAVE         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp BACKSLASH      &none
+&none  &none     &none     &none       &none             &trans  &trans  &trans      &trans  &kp PERIOD  &kp N0                    &none         &none         &kp PERIOD    &none              &none
             >;
         };
 
