@@ -87,7 +87,7 @@
         navigation {
             bindings = <
 &none  &none     &none         &none           &none      &none  &none                                  &none  &none         &none      &none          &none        &none      &none
-&none  &none     &none         &none           &none      &none  &none                                  &none  &kp LC(A)     &kp LC(P)  &kp LC(C)      &kp LC(X)    &kp LC(Z)  &none
+&none  &none     &none         &none           &none      &none  &none                                  &none  &kp LC(A)     &kp LC(V)  &kp LC(C)      &kp LC(X)    &kp LC(Z)  &none
 &none  &kp LGUI  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LCTRL  &none  &none  &none  &none      &to 0  &none  &none  &kp LEFT      &kp DOWN   &kp UP         &kp RIGHT    &none      &none
 &none  &none     &none         &none           &none      &none                &none      &none                &kp CAPSLOCK  &kp HOME   &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &none
 &none  &none     &none         &none           &none             &none  &none  &none      &none  &none  &none                &none      &none          &none        &none      &none
