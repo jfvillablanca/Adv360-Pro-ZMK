@@ -91,11 +91,11 @@
 
         navigation {
             bindings = <
-&none  &none     &none         &none           &none      &none  &none                                  &none  &none         &none        &none          &none        &none       &none
-&none  &none     &none         &none           &none      &none  &none                                  &none  &kp LC(A)     &kp K_PASTE  &kp K_COPY     &kp K_CUT    &kp K_UNDO  &none
-&none  &kp LGUI  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LCTRL  &none  &none  &none  &none      &to 0  &none  &none  &kp LEFT      &kp DOWN     &kp UP         &kp RIGHT    &none       &none
-&none  &none     &none         &none           &none      &none                &none      &none                &kp CAPSLOCK  &kp HOME     &kp PAGE_DOWN  &kp PAGE_UP  &kp END     &none
-&none  &none     &none         &none           &none             &none  &none  &none      &none  &none  &none                &none        &none          &none        &none       &none
+&none  &none     &none         &none           &none      &none  &none                                  &none  &none      &none          &none       &none      &none       &none
+&none  &none     &none         &none           &none      &none  &none                                  &none  &kp LC(A)  &kp K_PASTE    &kp K_COPY  &kp K_CUT  &kp K_UNDO  &none
+&none  &kp LGUI  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LCTRL  &none  &none  &none  &none      &to 0  &none  &none  &kp LEFT   &kp DOWN       &kp UP      &kp RIGHT  &none       &none
+&none  &none     &none         &none           &none      &none                &none      &none                &kp HOME   &kp PAGE_DOWN  &kp PG_UP   &kp END    &none       &none
+&none  &none     &none         &none           &none             &none  &none  &none      &none  &none  &none             &none          &none       &none      &none       &none
             >;
         };
 
