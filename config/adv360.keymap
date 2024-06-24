@@ -70,11 +70,11 @@
 
         qwerty {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &mo 6   &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp Q   &kp W   &kp E   &kp R   &kp T   &trans                                      &trans  &kp Y   &kp U   &kp I   &kp O   &kp P   &trans
-&trans  &kp A   &kp S   &kp D   &kp F   &kp G   &trans  &trans  &trans      &to 0   &trans  &trans  &kp H   &kp J   &kp K   &kp L   &trans  &trans
-&trans  &kp Z   &kp X   &kp C   &kp V   &kp B                   &trans      &trans                  &kp N   &kp M   &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                         &mo 6   &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp Q   &kp W   &kp E   &kp R   &kp T   &trans                                         &trans  &kp Y   &kp U   &kp I   &kp O   &kp P   &trans
+&trans  &kp A   &kp S   &kp D   &kp F   &kp G   &trans  &trans     &trans      &to 0   &trans  &trans  &kp H   &kp J   &kp K   &kp L   &trans  &trans
+&trans  &kp Z   &kp X   &kp C   &kp V   &kp B                      &trans      &trans                  &kp N   &kp M   &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &kp SPACE  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
 
