@@ -65,11 +65,11 @@
 
         colemak_default {
             bindings = <
-&kp EQUAL  &kp N1       &kp N2           &kp N3         &kp N4               &kp N5  &none                                                                &mo 6      &kp N6  &kp N7        &kp N8         &kp N9       &kp N0         &kp MINUS
-&kp TAB    &kp Q        &kp W            &kp F          &kp P                &kp G   &none                                                                &none      &kp J   &kp L         &kp U          &kp Y        &kp SEMICOLON  &kp BSLH
-&kp ESC    &hml LGUI A  &hml LEFT_ALT R  &hml LSHIFT S  &hml LEFT_CONTROL T  &kp D   &none            &kp LCTRL  &kp LGUI        &kp DELETE  &kp RCTRL    &none      &kp H   &hmr RCTRL N  &hmr RSHIFT E  &hmr RALT I  &hmr RGUI O    &kp SQT
+&kp EQUAL  &kp N1       &kp N2           &kp N3         &kp N4               &kp N5  &none                                                              &mo 6        &kp N6  &kp N7        &kp N8         &kp N9       &kp N0         &kp MINUS
+&kp TAB    &kp Q        &kp W            &kp F          &kp P                &kp G   &none                                                              &none        &kp J   &kp L         &kp U          &kp Y        &kp SEMICOLON  &kp BSLH
+&kp ESC    &hml LGUI A  &hml LEFT_ALT R  &hml LSHIFT S  &hml LEFT_CONTROL T  &kp D   &none            &kp LCTRL  &kp LGUI        &kp DELETE  &kp RCTRL  &none        &kp H   &hmr RCTRL N  &hmr RSHIFT E  &hmr RALT I  &hmr RGUI O    &kp SQT
 &kp LSHFT  &kp Z        &kp X            &kp C          &kp V                &kp B                               &tog 4          &mo 5                               &kp K   &kp M         &kp COMMA      &kp DOT      &kp FSLH       &kp RSHFT
-&kp LALT   &kp GRAVE    &kp CAPS         &kp LEFT       &kp RIGHT                    &lt 4 BACKSPACE  &mo 2      &sk LSHIFT      &sk RSHIFT  &lt 3 ENTER  &kp SPACE          &kp UP        &kp DOWN       &kp LBKT     &kp RBKT       &kp RIGHT_ALT
+&kp LALT   &kp GRAVE    &kp CAPS         &kp LEFT       &kp RIGHT                    &lt 4 BACKSPACE  &mo 2      &sk LSHIFT      &sk RSHIFT  &kp ENTER  &lt 3 SPACE          &kp UP        &kp DOWN       &kp LBKT     &kp RBKT       &kp RIGHT_ALT
             >;
         };
 
