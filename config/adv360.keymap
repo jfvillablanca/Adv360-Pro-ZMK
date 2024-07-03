@@ -22,6 +22,8 @@
     quick-tap-ms = <175>;
 };
 
+&caps_word { continue-list = <UNDERSCORE BACKSPACE DELETE MINUS>; };
+
 / {
     behaviors {
         #include "macros.dtsi"
